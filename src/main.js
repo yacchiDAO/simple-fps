@@ -153,21 +153,25 @@ function init() {
     const loader = new GLTFLoader();
     loader.load(
         // モデルファイルのパス (public ディレクトリからの相対パス)
-        './models/pistol/scene.gltf',
+        // './models/pistol/scene.gltf',
+        './models/sheriff/scene.gltf',
         function (gltf) {
             pistol = gltf.scene;
 
             // 銃のスケールを調整（モデルによって適切なサイズに調整してください）
             // 例: 0.1 は元のサイズの10分の1
-            pistol.scale.set(4.0, 4.0, 4.0); 
+            // pistol.scale.set(4.0, 4.0, 4.0); 
+            pistol.scale.set(0.07, 0.07, 0.07); 
 
             // 銃の初期位置を調整（カメラの右下あたりに表示されるように調整）
             // 数値は試行錯誤して調整してください
-            pistol.position.set(0.7, -0.5, -1.5); 
+            // pistol.position.set(0.7, -0.5, -1.5); 
+            pistol.position.set(1.5, -1.0, -1.5); 
 
             // 銃の向きを調整（モデルの向きによっては回転が必要）
             // このモデルでは必要ないかもしれませんが、一般的な調整です
-            pistol.rotation.y = Math.PI; // 例: 180度回転
+            // pistol.rotation.y = Math.PI; // 例: 180度回転
+            pistol.rotation.y = Math.PI * 0.5; // 例: 180度回転
 
             // カメラの子要素として追加することで、カメラと一緒に動く
             camera.add(pistol);
