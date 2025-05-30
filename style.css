@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100; /* クロスヘアより前面に表示 */
+}
+
+#instructions {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+#instructions p {
+    margin: 10px 0;
+}
+
+/* クロスヘアのスタイル追加ここから */
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: red; /* 赤い小さな点 */
+    border-radius: 50%; /* 円形 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+    z-index: 99; /* ゲームキャンバスより前面に表示 */
+    pointer-events: none; /* マウスイベントを透過させる */
+    opacity: 0; /* 最初は非表示 */
+}
+
+/* ポインターロック中はクロスヘアを表示 */
+body.locked #crosshair {
+    opacity: 1;
+}
+/* クロスヘアのスタイル追加ここまで */

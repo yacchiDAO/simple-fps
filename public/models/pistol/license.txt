@@ -1,0 +1,11 @@
+Model Information:
+* title:	H&K USP 9mm Pistol
+* source:	https://sketchfab.com/3d-models/hk-usp-9mm-pistol-dd4d144db20140a580848592697bc2b2
+* author:	Elisei (https://sketchfab.com/elisei_)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "H&K USP 9mm Pistol" (https://sketchfab.com/3d-models/hk-usp-9mm-pistol-dd4d144db20140a580848592697bc2b2) by Elisei (https://sketchfab.com/elisei_) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
